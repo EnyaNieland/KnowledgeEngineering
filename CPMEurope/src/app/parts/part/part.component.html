@@ -1,0 +1,14 @@
+<nav class="navbar navbar-light bg-light justify-content-between">
+  <a class="navbar-brand">{{title}}</a>
+  <a routerLink="/add">
+    <fa-icon [icon]="faPlusSquare" size="lg"></fa-icon>
+  </a>
+</nav>
+
+<div class="list-group">
+  <a *ngFor="let part of parts"
+     class="list-group-item list-group-item-action"
+     [routerLink]="['/database', { outlets: { edit: 'part/' + [part.id] } }]">
+    <span class="badge badge-primary badge-pill">{{part.id}}</span> {{part.type}}
+  </a>
+</div>
