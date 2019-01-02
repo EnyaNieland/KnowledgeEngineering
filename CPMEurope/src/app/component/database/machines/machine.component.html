@@ -1,0 +1,26 @@
+<table class="table table-hover">
+  <thead>
+  <tr>
+    <th scope="col">ID</th>
+    <th scope="col">Type</th>
+    <th scope="col">Parts</th>
+    <th scope="col">Products</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let machine of machines" (click)="onSelect(machine)">
+    <th scope="row">{{machine.id}}</th>
+    <td>{{machine.type}}</td>
+    <td>
+      <span *ngFor="let part of machine.parts">{{part.type}}; </span>
+    </td>
+    <td>
+      <span *ngFor="let product of machine.productTypes">{{product}}; </span>
+    </td>
+  </tr>
+  </tbody>
+</table>
+
+<app-machine-modal [machine]="selectedMachine"></app-machine-modal>
+
+<!--[routerLink]="['/database', { outlets: { edit: 'machine/' + [machine.id] } }]"-->

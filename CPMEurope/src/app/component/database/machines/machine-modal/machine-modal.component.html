@@ -1,0 +1,43 @@
+<div class="modal" tabindex="-1" role="dialog" id="machine-modal">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content" *ngIf="machine">
+      <div class="modal-header">
+        <h5 class="modal-title">{{machine.type}}</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="machineForm" (ngSubmit)="onSubmit()">
+          <div class="form-group row">
+            <label for="machineType" class="col-sm-3 col-form-label">Type</label>
+            <div class="col-sm-9">
+              <input type="text" [(ngModel)]="machine.type" formControlName="type" class="form-control" id="machineType" value="{{machine.type}}">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="machineParts" class="col-sm-3 col-form-label">Parts</label>
+            <div class="col-sm-9">
+              <select formControlName="parts" [(ngModel)]="machine.parts" class="custom-select" size="2" id="machineParts" multiple>
+                <!-- TODO: show all parts and show selected for those that are already added to machine -->
+                <option *ngFor="let part of parts" [ngValue]="part" [selected]="machine.parts.indexOf(part) > -1">{{part.type}}</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="machineProducts" class="col-sm-3 col-form-label">Products</label>
+            <div class="col-sm-9">
+              <select formControlName="products" [(ngModel)]="machine.productTypes" class="custom-select" size="2" id="machineProducts" multiple>
+                <option *ngFor="let product of machine.productTypes" ngValue="{{product}}">{{product}}</option>
+              </select>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,47 @@
+<div id="tender">
+  <h1>Tender for {{tender.machine.type}}</h1>
+
+  <div class="card border-dark mb-3">
+    <div class="card-header">Parts</div>
+    <div class="card-body text-dark">
+      <table class="table">
+        <thead class="thead-dark">
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Type</th>
+          <th scope="col">Size</th>
+          <th scope="col">Price</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let part of tender.machine.parts">
+          <th scope="row">{{part.id}}</th>
+          <td>{{part.type}}</td>
+          <td>{{part.size}}</td>
+          <td>{{part.price | currency}}</td>
+        </tr>
+        <tr>
+          <th scope="row" colspan="3">Total cost</th>
+          <td>{{tender.totalCost | currency}}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card border-dark mb-3">
+    <div class="card-header">Description</div>
+    <div class="card-body text-dark">
+      <p *ngFor="let part of tender.machine.parts">{{part.description}}</p>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-6">
+    <button type="button" class="btn btn-outline-danger btn-lg btn-block" (click)="submitEvaluation(false)">Disapprove</button>
+  </div>
+  <div class="col-6">
+    <button type="button" class="btn btn-outline-success btn-lg btn-block" (click)="submitEvaluation(true)">Approve</button>
+  </div>
+</div>

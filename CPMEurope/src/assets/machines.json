@@ -1,0 +1,8 @@
+[
+  { "id": 1, "type": "Pellet Mill", "parts": [] },
+  { "id": 2, "type": "Hammer Mill", "parts": [] },
+  { "id": 3, "type": "Heat Treatment", "parts": [] },
+  { "id": 4, "type": "Feeder & Conditioner", "parts": [] },
+  { "id": 5, "type": "Roller Mill", "parts": [] },
+  { "id": 6, "type": "Crusher", "parts": [] }
+]

@@ -1,46 +1,54 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { InMemoryDataService }  from './in-memory-data.service';
+import { InMemoryDataService }  from './service/in-memory-data.service';
 
 import { AppRoutingModule } from './app-routing.module';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { AppComponent } from './app.component';
-import { MachineComponent } from './machines/machine/machine.component';
-import { MachineDetailComponent } from './machines/machine-detail/machine-detail.component';
-import { MessageComponent } from './messages/message/message.component';
-import { UiModule } from './ui/ui.module';
-import { DatabaseComponent } from './database/database.component';
-import { PartComponent } from './parts/part/part.component';
-import { PartEditComponent } from './parts/part-edit/part-edit.component';
+import { MachineComponent } from './component/database/machines/machine.component';
+import { MessageComponent } from './component/database/messages/message.component';
+import { UiModule } from './component/ui/ui.module';
+import { DatabaseComponent } from './component/database/database.component';
+import { PartComponent } from './component/database/parts/part.component';
+import { RequestComponent } from './component/request/request.component';
+import { InputComponent } from './component/request/input/input.component';
+import { AssessmentComponent } from './component/request/assessment/assessment.component';
+import { OutputComponent } from './component/request/output/output.component';
+import { MachineModalComponent } from './component/database/machines/machine-modal/machine-modal.component';
+import { PartModalComponent } from './component/database/parts/part-modal/part-modal.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    MachineComponent,
-    MachineDetailComponent,
-    MessageComponent,
-    DatabaseComponent,
-    PartComponent,
-    PartEditComponent
-  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
     FormsModule,
+    ReactiveFormsModule,
     UiModule,
     HttpClientModule,
     HttpClientInMemoryWebApiModule.forRoot(
       InMemoryDataService
     )
   ],
-  providers: [],
+  declarations: [
+    AppComponent,
+    MachineComponent,
+    MessageComponent,
+    DatabaseComponent,
+    PartComponent,
+    RequestComponent,
+    InputComponent,
+    AssessmentComponent,
+    OutputComponent,
+    MachineModalComponent,
+    PartModalComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
