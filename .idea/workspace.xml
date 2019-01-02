@@ -59,7 +59,7 @@
         <entry file="file://$PROJECT_DIR$/CPMEurope/src/app/component/database/parts/part-modal/part-modal.component.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
-              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding>
                 <element signature="e#0#55#0" expanded="true" />
               </folding>
@@ -71,7 +71,7 @@
         <entry file="file://$PROJECT_DIR$/CPMEurope/src/app/component/database/machines/machine-modal/machine-modal.component.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="113">
-              <caret line="16" column="2" lean-forward="true" selection-start-line="16" selection-start-column="2" selection-end-line="20" selection-end-column="5" />
+              <caret line="16" column="2" lean-forward="false" selection-start-line="16" selection-start-column="2" selection-end-line="20" selection-end-column="5" />
               <folding>
                 <element signature="e#0#57#0" expanded="true" />
               </folding>
@@ -105,7 +105,7 @@
         <entry file="file://$PROJECT_DIR$/CPMEurope/src/app/component/database/parts/part-modal/part-modal.component.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
-              <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+              <caret line="25" column="34" lean-forward="false" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
               <folding>
                 <element signature="e#380#387#1" expanded="true" />
               </folding>
@@ -367,12 +367,12 @@
       <workItem from="1545310882594" duration="76000" />
       <workItem from="1545310962935" duration="12000" />
       <workItem from="1545310977964" duration="36958000" />
-      <workItem from="1545898153678" duration="33748000" />
+      <workItem from="1545898153678" duration="34269000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77267000" />
+    <option name="totallyTimeSpent" value="77788000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="6" />
@@ -817,7 +817,7 @@
     <entry file="file://$PROJECT_DIR$/CPMEurope/src/app/component/database/machines/machine-modal/machine-modal.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="113">
-          <caret line="16" column="2" lean-forward="true" selection-start-line="16" selection-start-column="2" selection-end-line="20" selection-end-column="5" />
+          <caret line="16" column="2" lean-forward="false" selection-start-line="16" selection-start-column="2" selection-end-line="20" selection-end-column="5" />
           <folding>
             <element signature="e#0#57#0" expanded="true" />
           </folding>
@@ -827,7 +827,7 @@
     <entry file="file://$PROJECT_DIR$/CPMEurope/src/app/component/database/parts/part-modal/part-modal.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
             <element signature="e#0#55#0" expanded="true" />
           </folding>
@@ -837,7 +837,7 @@
     <entry file="file://$PROJECT_DIR$/CPMEurope/src/app/component/database/parts/part-modal/part-modal.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+          <caret line="25" column="34" lean-forward="false" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
           <folding>
             <element signature="e#380#387#1" expanded="true" />
           </folding>
