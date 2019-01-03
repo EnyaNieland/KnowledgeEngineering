@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as $ from 'jquery';
 
 // services
 import { MachineService } from '../../../service/machine.service';
@@ -30,6 +31,6 @@ export class MachineComponent implements OnInit {
 
   onSelect(machine: Machine): void {
     this.selectedMachine = machine;
-    $('#machine-modal').modal('show');
+    (<any>$('#machine-modal')).modal('show');
   }
 }

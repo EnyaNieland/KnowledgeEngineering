@@ -4,6 +4,7 @@ import { FormControl, FormGroup } from "@angular/forms";
 import {MachineService} from "../../../../service/machine.service";
 import {PartService} from "../../../../service/part.service";
 import {Part} from "../../../../class/part";
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-machine-modal',
@@ -33,6 +34,6 @@ export class MachineModalComponent implements OnInit {
   onSubmit() {
     console.log(this.machineForm.value, this.machine);
     this.machineService.updateMachine(this.machine)
-      .subscribe(() => $('#machine-modal').modal('hide'));
+      .subscribe(() => (<any>$('#machine-modal')).modal('hide'));
   }
 }

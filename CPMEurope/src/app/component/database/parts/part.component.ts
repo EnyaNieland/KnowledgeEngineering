@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as $ from 'jquery';
 
 // services
 import { PartService } from '../../../service/part.service';
@@ -31,6 +32,6 @@ export class PartComponent implements OnInit {
 
   onSelect(part: Part): void {
     this.selectedPart = part;
-    $('#part-modal').modal('show');
+    (<any>$('#part-modal')).modal('show');
   }
 }
