@@ -45,6 +45,7 @@ export class OutputComponent implements OnInit {
     if(success) {
       if(this.assessmentService.evaluate()){
         this.createPDF(this.tender.machine.type);
+        this.router.navigate(['/request', { outlets: { assessment: 'input'} }]);
       } else {
         this.router.navigate(['/request', { outlets: { assessment: 'input'} }]);
       }
