@@ -1,25 +1,60 @@
 <h1>{{title}}</h1>
 
-<div id="accordion">
-  <div class="card">
-    <div class="card-header" id="headingOne"  data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-      Machines
-    </div>
-    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-      <div class="card-body">
-        <app-machine></app-machine>
-      </div>
-    </div>
+<!--<div id="accordion">-->
+  <!--<div class="card">-->
+    <!--<div class="card-header" id="headingOne"  data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">-->
+      <!--Machines-->
+    <!--</div>-->
+    <!--<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">-->
+      <!--<div class="card-body">-->
+        <!--<app-machine></app-machine>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+  <!--<div class="card">-->
+    <!--<div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">-->
+      <!--Parts-->
+    <!--</div>-->
+    <!--<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">-->
+      <!--<div class="card-body">-->
+        <!--<app-part></app-part>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+<!--</div>-->
+
+
+<div class="card border-dark">
+  <div class="card-header">
+    <ul class="nav nav-tabs card-header-tabs">
+      <li class="nav-item">
+        <a class="nav-link"
+           routerLinkActive="active"
+           [routerLinkActiveOptions]="{exact: true}"
+           [routerLink]="['/database', { outlets: { database: 'machines'} }]">Machines</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"
+           routerLinkActive="active"
+           [routerLinkActiveOptions]="{exact: true}"
+           [routerLink]="['/database', { outlets: { database: 'parts' } }]">Parts</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"
+           routerLinkActive="active"
+           [routerLinkActiveOptions]="{exact: true}"
+           [routerLink]="['/database', { outlets: { database: 'products'} }]">Products</a>
+      </li>
+    </ul>
   </div>
-  <div class="card">
-    <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-      Parts
-    </div>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-      <div class="card-body">
-        <app-part></app-part>
-      </div>
-    </div>
+  <div class="card-body text-dark">
+    <router-outlet name="database"></router-outlet>
+    <!--<h5 class="card-title">Special title treatment</h5>-->
+    <!--<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>-->
+    <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+  </div>
+  <div class="card-footer text-muted">
+    2 days ago
   </div>
 </div>
 

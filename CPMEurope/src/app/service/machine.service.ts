@@ -97,6 +97,6 @@ export class MachineService {
   }
 
   private log(message: string) {
-    this.messageService.add(`MachineService: ${message}`);
+    //this.messageService.add(`MachineService: ${message}`);
   }
 }

@@ -1,0 +1,24 @@
+<h5 class="card-header">Products</h5>
+
+<table class="table table-hover">
+  <thead>
+  <tr>
+    <th scope="col">ID</th>
+    <th scope="col">Type</th>
+    <th scope="col">Sizes</th>
+    <th scope="col">Capacities</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let product of products" (click)="onSelect(product)">
+    <th scope="row">{{product.id}}</th>
+    <td>{{product.type}}</td>
+    <td>
+      <span *ngFor="let size of product.size">{{size}}; </span>
+    </td>
+    <td>
+      <span *ngFor="let capacity of product.capacity">{{capacity}}; </span>
+    </td>
+  </tr>
+  </tbody>
+</table>

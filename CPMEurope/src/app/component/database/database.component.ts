@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-database',
@@ -7,14 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DatabaseComponent implements OnInit {
   title = "Database";
-  routerlinks: object[] = [
-    {name: "Machines", link: "machines"},
-    {name: "Parts", link: "parts"}
-  ];
+  clicked: boolean = false;
 
-  constructor() { }
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit() {
+  }
+
+  Clicked() {
+    this.clicked = true;
+  }
+
+  navigate(url: string) {
+     this.router.navigate(['/database', { outlets: { database: url} }])
   }
 
 }

@@ -78,10 +78,17 @@ export class InMemoryDataService implements InMemoryDbService {
       { id: 16, type: 'Part 16', size: "small", price: 16, description: "Vivamus laoreet. Nullam tincidunt adipiscing enim. Phasellus tempus. Proin viverra, ligula sit amet ultrices semper, ligula arcu tristique sapien, a accumsan nisi mauris ac eros. Fusce neque. Suspendisse faucibus, nunc et pellentesque egestas, lacus ante convallis tellus, vitae iaculis lacus elit id tortor. Vivamus aliquet elit ac nisl. Fusce fermentum odio nec arcu. Vivamus euismod mauris. In ut quam vitae odio lacinia tincidunt. Praesent ut ligula non mi varius sagittis. Cras sagittis. Praesent ac sem eget est egestas volutpat. Vivamus consectetuer hendrerit lacus. Cras non dolor. Vivamus in erat ut urna cursus vestibulum. Fusce commodo aliquam arcu. Nam commodo suscipit quam. Quisque id odio. Praesent venenatis metus at tortor pulvinar varius."},
       { id: 17, type: 'Part 17', size: "medium", price: 14, description: "Vivamus laoreet. Nullam tincidunt adipiscing enim. Phasellus tempus. Proin viverra, ligula sit amet ultrices semper, ligula arcu tristique sapien, a accumsan nisi mauris ac eros. Fusce neque. Suspendisse faucibus, nunc et pellentesque egestas, lacus ante convallis tellus, vitae iaculis lacus elit id tortor. Vivamus aliquet elit ac nisl. Fusce fermentum odio nec arcu. Vivamus euismod mauris. In ut quam vitae odio lacinia tincidunt. Praesent ut ligula non mi varius sagittis. Cras sagittis. Praesent ac sem eget est egestas volutpat. Vivamus consectetuer hendrerit lacus. Cras non dolor. Vivamus in erat ut urna cursus vestibulum. Fusce commodo aliquam arcu. Nam commodo suscipit quam. Quisque id odio. Praesent venenatis metus at tortor pulvinar varius."}
     ];
-    return {machines, parts};
+
+    let products = [
+      { id: 1, type: "oil-seed", size: ["large", "medium", "small"], capacity: ["large", "medium", "small"]},
+      { id: 2, type: "biomass", size: ["large", "medium", "small"], capacity: ["large", "medium", "small"]},
+      { id: 3, type: "feed", size: ["large", "medium", "small"], capacity: ["large", "medium", "small"]},
+    ];
+
+    return {machines, parts, products};
   }
 
-  // genId(machines: Machine[]): number {
+// genId(machines: Machine[]): number {
   //   return machines.length > 0 ? Math.max(...machines.map(machine => machine.id)) + 1 : 11;
   // }
   //

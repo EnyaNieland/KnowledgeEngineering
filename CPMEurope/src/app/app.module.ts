@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from "@angular/router";
 
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService }  from './service/in-memory-data.service';
@@ -22,6 +23,7 @@ import { AssessmentComponent } from './component/request/assessment/assessment.c
 import { OutputComponent } from './component/request/output/output.component';
 import { MachineModalComponent } from './component/database/machines/machine-modal/machine-modal.component';
 import { PartModalComponent } from './component/database/parts/part-modal/part-modal.component';
+import { ProductsComponent } from './component/database/products/products.component';
 
 @NgModule({
   imports: [
@@ -30,6 +32,7 @@ import { PartModalComponent } from './component/database/parts/part-modal/part-m
     FontAwesomeModule,
     FormsModule,
     ReactiveFormsModule,
+    RouterModule,
     UiModule,
     HttpClientModule,
     HttpClientInMemoryWebApiModule.forRoot(
@@ -47,7 +50,8 @@ import { PartModalComponent } from './component/database/parts/part-modal/part-m
     AssessmentComponent,
     OutputComponent,
     MachineModalComponent,
-    PartModalComponent
+    PartModalComponent,
+    ProductsComponent
   ],
   bootstrap: [AppComponent]
 })
