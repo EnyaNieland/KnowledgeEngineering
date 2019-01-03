@@ -10,7 +10,7 @@
   </tr>
   </thead>
   <tbody>
-  <tr *ngFor="let product of products" (click)="onSelect(product)">
+  <tr *ngFor="let product of products">
     <th scope="row">{{product.id}}</th>
     <td>{{product.type}}</td>
     <td>

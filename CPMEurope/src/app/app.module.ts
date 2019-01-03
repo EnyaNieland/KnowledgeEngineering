@@ -24,6 +24,7 @@ import { OutputComponent } from './component/request/output/output.component';
 import { MachineModalComponent } from './component/database/machines/machine-modal/machine-modal.component';
 import { PartModalComponent } from './component/database/parts/part-modal/part-modal.component';
 import { ProductsComponent } from './component/database/products/products.component';
+import { TendersComponent } from './component/database/tenders/tenders.component';
 
 @NgModule({
   imports: [
@@ -51,7 +52,8 @@ import { ProductsComponent } from './component/database/products/products.compon
     OutputComponent,
     MachineModalComponent,
     PartModalComponent,
-    ProductsComponent
+    ProductsComponent,
+    TendersComponent
   ],
   bootstrap: [AppComponent]
 })
