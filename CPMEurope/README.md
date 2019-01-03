@@ -8,7 +8,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 3. Check if an npm client is available by typing npm -v (it is installed with Node.js by default)
 4. Install angular-cli: npm install -g @angular/cli
 
-#Run application
+# Run application
 1. Go to the workspace folder (CPMEurope): cd CPMEurope
 2. Run: npm i
 3. Run: ng serve --open

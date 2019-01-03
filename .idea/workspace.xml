@@ -57,7 +57,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="part.component.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="part.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CPMEurope/src/app/component/database/parts/part.component.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
@@ -69,14 +69,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="karma.conf.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CPMEurope/src/karma.conf.js">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CPMEurope/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state relative-caret-position="150">
+              <caret line="10" column="2" lean-forward="false" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -180,7 +178,6 @@
         <option value="$PROJECT_DIR$/CPMEurope/src/app/component/request/output/output.component.html" />
         <option value="$PROJECT_DIR$/CPMEurope/src/app/component/request/output/output.component.ts" />
         <option value="$PROJECT_DIR$/CPMEurope/src/app/service/assessment.service.ts" />
-        <option value="$PROJECT_DIR$/CPMEurope/README.md" />
         <option value="$PROJECT_DIR$/CPMEurope/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/CPMEurope/src/app/app-routing.module.ts" />
         <option value="$PROJECT_DIR$/CPMEurope/src/app/service/modal.service.ts" />
@@ -195,6 +192,7 @@
         <option value="$PROJECT_DIR$/CPMEurope/src/app/component/database/machines/machine.component.ts" />
         <option value="$PROJECT_DIR$/CPMEurope/src/app/component/database/machines/machine-modal/machine-modal.component.ts" />
         <option value="$PROJECT_DIR$/CPMEurope/src/app/component/database/parts/part.component.ts" />
+        <option value="$PROJECT_DIR$/CPMEurope/README.md" />
       </list>
     </option>
   </component>
@@ -614,12 +612,12 @@
       <workItem from="1545310962935" duration="12000" />
       <workItem from="1545310977964" duration="36958000" />
       <workItem from="1545898153678" duration="34269000" />
-      <workItem from="1546468578030" duration="1261000" />
+      <workItem from="1546468578030" duration="1947000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79049000" />
+    <option name="totallyTimeSpent" value="79735000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="6" />
@@ -707,14 +705,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CPMEurope/tsconfig.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CPMEurope/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -896,6 +886,14 @@
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CPMEurope/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="2" lean-forward="false" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>
