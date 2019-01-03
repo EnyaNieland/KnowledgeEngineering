@@ -98,6 +98,6 @@ export class PartService {
   }
 
   private log(message: string) {
-    this.messageService.add(`PartService: ${message}`);
+    //this.messageService.add(`PartService: ${message}`);
   }
 }

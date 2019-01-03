@@ -7,9 +7,24 @@ import {RequestComponent} from "./component/request/request.component";
 import {InputComponent} from "./component/request/input/input.component";
 import {AssessmentComponent} from "./component/request/assessment/assessment.component";
 import {OutputComponent} from "./component/request/output/output.component";
+import {MachineComponent} from "./component/database/machines/machine.component";
+import {PartComponent} from "./component/database/parts/part.component";
+import {ProductsComponent} from "./component/database/products/products.component";
+import {TendersComponent} from "./component/database/tenders/tenders.component";
 
 const routes: Routes = [
-  { path: "database", component: DatabaseComponent },
+  { path: "database", component: DatabaseComponent, children: [
+    { path: "machines", component: MachineComponent, outlet: "database" },
+    { path: "machines/add", component: MachineComponent, outlet: "database" },
+    { path: "machines/:id", component: MachineComponent, outlet: "database" },
+    { path: "parts", component: PartComponent, outlet: "database" },
+    { path: "parts/add", component: PartComponent, outlet: "database" },
+    { path: "parts/:id", component: PartComponent, outlet: "database" },
+    { path: "products", component: ProductsComponent, outlet: "database" },
+    { path: "products/add", component: ProductsComponent, outlet: "database" },
+    { path: "products/:id", component: ProductsComponent, outlet: "database" },
+    { path: "tenders", component: TendersComponent, outlet: "database" }
+  ] },
   { path: "request", component: RequestComponent, children: [
     { path: "input", component: InputComponent, outlet: "assessment" },
     { path: "assessment", component: AssessmentComponent, outlet: "assessment" },

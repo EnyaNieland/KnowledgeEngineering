@@ -108,7 +108,7 @@ export class AssessmentService {
   select(chosenMachine: Machine) {
     this.tender = null;
 
-    var id = this.tenders.length;
+    var id = this.tenders.length + 1;
     var totalCosts = chosenMachine.parts.map(part => part.price).reduce((prev, next) => prev + next);
     var fullDescription = chosenMachine.parts.map(part => part.description);
 
@@ -127,6 +127,7 @@ export class AssessmentService {
     // use the rule types increase rule to evaluate the tender
 
     if(this.tender.totalCost > 0) {
+      this.tender = undefined;
       return true;
     }
     else {

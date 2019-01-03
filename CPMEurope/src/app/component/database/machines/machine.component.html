@@ -1,3 +1,5 @@
+<h5 class="card-title">Machines</h5>
+
 <table class="table table-hover">
   <thead>
   <tr>
@@ -8,7 +10,7 @@
   </tr>
   </thead>
   <tbody>
-  <tr *ngFor="let machine of machines" (click)="onSelect(machine)">
+  <tr *ngFor="let machine of machines">
     <th scope="row">{{machine.id}}</th>
     <td>{{machine.type}}</td>
     <td>
@@ -22,5 +24,3 @@
 </table>
 
 <app-machine-modal [machine]="selectedMachine"></app-machine-modal>
-
-<!--[routerLink]="['/database', { outlets: { edit: 'machine/' + [machine.id] } }]"-->

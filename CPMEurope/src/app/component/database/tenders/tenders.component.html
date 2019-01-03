@@ -1,0 +1,24 @@
+<h5 class="card-title">Tenders</h5>
+
+<table class="table table-hover" *ngIf="tenders.length > 0; else otherContent">
+  <thead>
+  <tr>
+    <th scope="col">ID</th>
+    <th scope="col">Machine</th>
+    <th scope="col">Total Price</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let tender of tenders">
+    <th scope="row">{{tender.id}}</th>
+    <td>{{tender.machine.type}}</td>
+    <td>{{tender.totalCost | currency}}</td>
+  </tr>
+  </tbody>
+</table>
+
+<ng-template #otherContent>
+  <div class="alert alert-info" role="alert">
+    There are no tenders saved yet.
+  </div>
+</ng-template>
