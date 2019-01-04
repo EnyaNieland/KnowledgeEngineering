@@ -28,9 +28,4 @@ export class MachineComponent implements OnInit {
     this.machineService.getMachines()
       .subscribe(machines => this.machines = machines);
   }
-
-  onSelect(machine: Machine): void {
-    this.selectedMachine = machine;
-    (<any>$('#machine-modal')).modal('show');
-  }
 }

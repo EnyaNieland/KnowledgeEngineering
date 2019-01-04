@@ -21,8 +21,6 @@ import { RequestComponent } from './component/request/request.component';
 import { InputComponent } from './component/request/input/input.component';
 import { AssessmentComponent } from './component/request/assessment/assessment.component';
 import { OutputComponent } from './component/request/output/output.component';
-import { MachineModalComponent } from './component/database/machines/machine-modal/machine-modal.component';
-import { PartModalComponent } from './component/database/parts/part-modal/part-modal.component';
 import { ProductsComponent } from './component/database/products/products.component';
 import { TendersComponent } from './component/database/tenders/tenders.component';
 
@@ -50,8 +48,6 @@ import { TendersComponent } from './component/database/tenders/tenders.component
     InputComponent,
     AssessmentComponent,
     OutputComponent,
-    MachineModalComponent,
-    PartModalComponent,
     ProductsComponent,
     TendersComponent
   ],
