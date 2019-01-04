@@ -13,3 +13,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 2. Run: npm i
 3. Run: ng serve --open
 4. The application will start in the browser.
+
+# Incase of the operation failing
+1. Rebuild the project in the workspace folder: cd CPMEurope
+2. Run: npm rebuild node-sass
