@@ -29,9 +29,4 @@ export class PartComponent implements OnInit {
     this.partService.getParts()
       .subscribe(parts => this.parts = parts );
   }
-
-  onSelect(part: Part): void {
-    this.selectedPart = part;
-    (<any>$('#part-modal')).modal('show');
-  }
 }
